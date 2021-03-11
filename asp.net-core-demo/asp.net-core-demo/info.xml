@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>asp.net-core-demo</name>
+    </assembly>
+    <members>
+        <member name="M:asp.net_core_demo.Controllers.BlogController.Get(System.Int32,System.Int32)">
+            <summary>
+            Sum接口
+            </summary>
+            <param name="i">参数i</param>
+            <param name="j">参数j</param>
+            <returns></returns>
+        </member>
+        <member name="M:asp.net_core_demo.Controllers.forecastController.Get">
+            <summary>
+            获取天气预报
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
