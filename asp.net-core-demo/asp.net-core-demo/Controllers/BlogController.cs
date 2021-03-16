@@ -1,6 +1,7 @@
 ﻿using IServer;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Model;
 using Server;
 using System;
 using System.Collections.Generic;
@@ -13,18 +14,18 @@ namespace asp.net_core_demo.Controllers
     [Route("[controller]")]
     public class BlogController : Controller
     {
-        // GET: api/Blog
+        // GET: api/Blog/5
         /// <summary>
-        /// Sum接口
+        /// 
         /// </summary>
-        /// <param name="i">参数i</param>
-        /// <param name="j">参数j</param>
+        /// <param name="id"></param>
         /// <returns></returns>
-        [HttpGet]
-        public int Get(int i, int j)
+        [HttpGet("{id}", Name = "Get")]
+        public List<Advertisement> Get(int id)
         {
             IAdvertisementServices advertisementServices = new AdvertisementServices();
-            return advertisementServices.Sum(i, j);
+
+            return advertisementServices.Query(d => d.Id == id);
         }
 
     }
