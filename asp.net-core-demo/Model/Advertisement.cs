@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SqlSugar;
+using System;
 
 namespace Model
 {
@@ -7,6 +8,7 @@ namespace Model
         /// <summary>
         /// ID
         /// </summary>
+        [SugarColumn(IsIdentity = true, IsPrimaryKey = true)]
         public int Id { get; set; }
 
         /// <summary>
@@ -32,6 +34,7 @@ namespace Model
         /// <summary>
         /// 创建时间
         /// </summary>
+        [SugarColumn(IsNullable = true)]
         public DateTime Createdate { get; set; } = DateTime.Now;
     }
 }

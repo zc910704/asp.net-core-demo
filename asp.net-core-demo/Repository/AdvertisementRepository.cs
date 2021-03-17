@@ -28,7 +28,10 @@ namespace Repository
         public AdvertisementRepository()
         {
             DbContext.Init(BaseDBConfig.ConnectionString);
-            context = DbContext.GetDbContext(); db = context.Db;
+            context = DbContext.GetDbContext(); 
+            db = context.Db;
+            //创建数据库
+            db.CodeFirst.SetStringDefaultLength(200).InitTables(typeof(Advertisement));
             entityDB = context.GetEntityDB<Advertisement>(db);
         }
         public int Add(Advertisement model)
