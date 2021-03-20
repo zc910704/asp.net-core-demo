@@ -3,17 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31005.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "asp.net-core-demo", "asp.net-core-demo\asp.net-core-demo.csproj", "{2E21C3F6-E032-4A92-A492-8BB9C9DEF49C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "asp.net-core-demo", "asp.net-core-demo\asp.net-core-demo.csproj", "{2E21C3F6-E032-4A92-A492-8BB9C9DEF49C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IRepository", "IRepository\IRepository.csproj", "{99DBB296-57D2-4CF5-B168-2756EE1C0E54}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IRepository", "IRepository\IRepository.csproj", "{99DBB296-57D2-4CF5-B168-2756EE1C0E54}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{28D93560-9AEC-402E-8866-8D64DA137F00}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Model", "Model\Model.csproj", "{28D93560-9AEC-402E-8866-8D64DA137F00}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository", "Repository\Repository.csproj", "{A7A93CCE-5A02-42C7-9B29-CAFCA4BB208D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repository", "Repository\Repository.csproj", "{A7A93CCE-5A02-42C7-9B29-CAFCA4BB208D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IServer", "IServer\IServer.csproj", "{7089A33E-71D0-4228-B6F1-C69F33EFF4CC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IServer", "IServer\IServer.csproj", "{7089A33E-71D0-4228-B6F1-C69F33EFF4CC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server", "Server\Server.csproj", "{26F1E251-8803-4B08-AEB3-D555DA2E3F81}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Server", "Server\Server.csproj", "{26F1E251-8803-4B08-AEB3-D555DA2E3F81}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingletonScopeTransientDemo", "SingletonScopeTransientDemo\SingletonScopeTransientDemo.csproj", "{B82D6A71-0725-40A0-A222-5C3DDCF99E0F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{26F1E251-8803-4B08-AEB3-D555DA2E3F81}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{26F1E251-8803-4B08-AEB3-D555DA2E3F81}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{26F1E251-8803-4B08-AEB3-D555DA2E3F81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B82D6A71-0725-40A0-A222-5C3DDCF99E0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B82D6A71-0725-40A0-A222-5C3DDCF99E0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B82D6A71-0725-40A0-A222-5C3DDCF99E0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B82D6A71-0725-40A0-A222-5C3DDCF99E0F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
