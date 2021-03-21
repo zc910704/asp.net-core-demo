@@ -19,6 +19,7 @@ namespace SingletonScopeTransientDemo.Controllers
 
         // GET api/values
         [HttpGet]
+        [Route("test")]
         public ActionResult<IEnumerable<string>> SetTest()
         {
             sing.Age = 18;

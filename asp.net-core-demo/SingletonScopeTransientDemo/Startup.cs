@@ -28,14 +28,15 @@ namespace SingletonScopeTransientDemo
         {
 
             services.AddControllers();
+            services.AddMvc();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "SingletonScopeTransientDemo", Version = "v1" });
-                services.AddTransient<ITranTest, TranTest>();
-                services.AddSingleton<ISingTest, SingTest>();
-                services.AddScoped<ISconTest, SconTest>();
-                services.AddScoped<IAService, AService>();
             });
+            services.AddTransient<ITranTest, TranTest>();
+            services.AddSingleton<ISingTest, SingTest>();
+            services.AddScoped<ISconTest, SconTest>();
+            services.AddScoped<IAService, AService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
